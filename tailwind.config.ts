@@ -9,8 +9,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#0A0A0A",
+        title: {
+          primary: "#e7e7e7",
+          secundary: "#676767"
+        },
+        paragraph: "#666",
+        nav: {
+          primary: "#181818",
+          secundary: "#090909",
+          text: "#666",
+        },
+        card: {
+          primary: "#242424",
+          secundary: "#070707",
+        },
+        box: {
+          background: "#151518",
+          stroke: "#27272a",
+          
+        }
       },
     },
   },
