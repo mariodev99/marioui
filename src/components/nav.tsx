@@ -44,7 +44,7 @@ export default function Nav({ isVisible }: NavProps) {
       <motion.div
         className="hidden md:block"
         animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
+        transition={{ duration: 0.5, type: "spring" }}
       >
         <Link href={"/"}>
           <LogoIcon />
