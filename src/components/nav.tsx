@@ -40,7 +40,7 @@ export default function Nav({ isVisible }: NavProps) {
   // const pathname = usePathname();
 
   return (
-    <motion.header className=" w-full flex items-center justify-center gap-4 h-16 mt-5 fixed z-50">
+    <motion.header className=" w-full flex items-center justify-center gap-4 h-16 mt-5 fixed z-50 px-3">
       <motion.div
         className="hidden md:block"
         animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0 }}
@@ -60,7 +60,7 @@ export default function Nav({ isVisible }: NavProps) {
             <Link
               href={item.url}
               key={index}
-              className="flex items-center gap-3 group cursor-pointer group"
+              className="flex items-center gap-3 group cursor-pointer group text-sm md:text-base font-medium"
             >
               {item.icon}{" "}
               <motion.div className="group-hover:text-white">

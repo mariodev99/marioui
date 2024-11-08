@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="pt-24 px-5 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col items-start md:items-start">
           <div className="flex  gap-2 items-center">
             <LogoIcon />
             <MarioUiIcon />
@@ -15,7 +15,7 @@ export default function Footer() {
             Get inspired and build beautiful websites
           </p>
         </div>
-        <div className="flex mt-5 md:mt-0 gap-5 md:gap-20 text-lg text-title-secundary font-medium justify-center md:justify-start">
+        <div className="grid grid-cols-2 mt-5 md:mt-0 gap-5 md:gap-4 md:ml-3 text-sm md:text-lg text-title-secundary font-medium ">
           <div className="flex flex-col gap-2">
             <Link href={"/"} className="hover:text-white">
               Home

@@ -46,7 +46,7 @@ export default async function Home() {
             </div>
             <GridList>
               {data.websites?.map((item: CardProps) => (
-                <Link href={item.url} target="_blank" key={item.id}>
+                <Link href={item.url} target="_blank" key={item.title}>
                   <Card>
                     <Card.Image>
                       <Image
@@ -72,7 +72,7 @@ export default async function Home() {
             </div>
             <GridList>
               {data.components?.map((item: Component) => (
-                <Link href={`/components/${item.id}`} key={item.id}>
+                <Link href={`/components/${item.id}`} key={item.title}>
                   <Card>
                     <Card.Image>
                       <ComponentCardIcon />
@@ -92,7 +92,7 @@ export default async function Home() {
             </div>
             <GridList>
               {data.tools?.map((item: CardProps) => (
-                <Link href={item.url} target="_blank" key={item.id}>
+                <Link href={item.url} target="_blank" key={item.title}>
                   <Card>
                     <Card.Image>
                       <Image

@@ -17,7 +17,7 @@ const config: Config = {
         paragraph: "#666",
         nav: {
           primary: "#181818",
-          secundary: "#090909",
+          secundary: "#0e0e0e",
           text: "#666",
         },
         card: {
